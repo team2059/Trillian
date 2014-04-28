@@ -1,2 +1,0 @@
-C:\Users\Christian\Dropbox\2013 Hitchiker Code\Robot Code\Teleop.vi (Teleop.vi)
-    - The VI expected to be at "C:\Users\Christian\Dropbox\2013 Hitchiker Code\Robot Code\Robot Global Data.vi" was loaded from "C:\Users\Christian\Documents\2012\LabView\Robot Global Data.vi".
