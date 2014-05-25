@@ -1,6 +1,6 @@
 MIDlet-Name: Test1
 MIDlet-Version: 1.0.0
 MIDlet-Vendor: FIRST
-MIDlet-1: Test1, , edu.wpi.first.wpilibj.templates.Test1
+MIDlet-1: Test1, ,  org.thehitchhikers.trillian.Test1
 MicroEdition-Profile: IMP-1.0
 MicroEdition-Configuration: CLDC-1.1
