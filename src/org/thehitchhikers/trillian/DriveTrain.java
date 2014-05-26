@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.Talon;
  */
 public class DriveTrain {
     
+    Trillian trillian;
     Talon Left1;
     Talon Left2;
     Talon Right1;
@@ -16,7 +17,8 @@ public class DriveTrain {
     double LastRightPower;
     double MaxStep;
     
-    DriveTrain(){
+    DriveTrain(Trillian thebot){
+        trillian = thebot;
         Left1 = new Talon(1);
         Left2 = new Talon (3);
         Right1 = new Talon(2);

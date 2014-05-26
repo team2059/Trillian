@@ -9,27 +9,27 @@ import edu.wpi.first.wpilibj.Joystick;
 
 /**
  *
- * @author JKeeganPierce
+ * @author randy
  */
-public class DriverStick {
+public class ShooterStick {
     
     Joystick MyStick;
     Trillian trillian;
     
-    public DriverStick(Trillian thebot){
+    public ShooterStick(Trillian thebot){
         trillian = thebot;
         MyStick = new Joystick(1);
     }
     
-    public double getForward(){
-        return -1*MyStick.getY();
-        
+    public boolean getTrigger()
+    {
+        return MyStick.getTrigger();
     }
-    public double getTurn(){
-        return MyStick.getX();
+    
+    public double getWheelSpeed()
+    {
         
+        return (MyStick.getRawAxis(4) - 1)/2;
     }
-    public double getTwist(){
-        return MyStick.getZ();
-    }    
+
 }
