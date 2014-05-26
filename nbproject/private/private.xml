@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/JKeeganPierce/NetBeansProjects/Test1/src/edu/wpi/first/wpilibj/templates/DriverStick.java</file>
-            <file>file:/Users/JKeeganPierce/NetBeansProjects/Test1/src/edu/wpi/first/wpilibj/templates/Test1.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/Trillian/src/org/thehitchhikers/trillian/ShooterStick.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/Trillian/src/org/thehitchhikers/trillian/Trillian.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/Trillian/src/org/thehitchhikers/trillian/DriverStick.java</file>
+            <file>file:/D:/Documents/NetBeansProjects/Trillian/src/org/thehitchhikers/trillian/Shooter.java</file>
         </group>
     </open-files>
 </project-private>
