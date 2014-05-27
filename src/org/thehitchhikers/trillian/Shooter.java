@@ -43,26 +43,26 @@ public class Shooter {
             double motorstep = 0.01;
             double voltage = 0;
             double potVol = anglePot.getVoltage();
-            while( potVol < 3.1f  && (voltage < 1))
-            {
-                trillian.dashboard.ShowAngleVoltage(potVol);
-                trillian.dashboard.ShowAngleMotor(voltage);
-                angleWheel.set(voltage);
-                potVol = anglePot.getVoltage();
-                motorstep = (3.1f - potVol)/1000;
-                voltage += motorstep;
-            }
+//            while( potVol < 3.1f  && (voltage < 1))
+//            {
+//                trillian.dashboard.ShowAngleVoltage(potVol);
+//                trillian.dashboard.ShowAngleMotor(voltage);
+//                angleWheel.set(voltage);
+//                potVol = anglePot.getVoltage();
+//                motorstep = (3.1f - potVol)/1000;
+//                voltage += motorstep;
+//            }
             inSol.set(false);
             outSol.set(true);
             trillian.dashboard.ShowAngleMotor(999);
-            motorstep = 0.01;
-            while(anglePot.getVoltage() > 0 && voltage > 0)
-            {
-                trillian.dashboard.ShowAngleVoltage(anglePot.getVoltage());
-                trillian.dashboard.ShowAngleMotor(voltage);
-                angleWheel.set(voltage);
-                voltage -= motorstep;
-            }
+//            motorstep = 0.01;
+//            while(anglePot.getVoltage() > 0 && voltage > 0)
+//            {
+//                trillian.dashboard.ShowAngleVoltage(anglePot.getVoltage());
+//                trillian.dashboard.ShowAngleMotor(voltage);
+//                angleWheel.set(voltage);
+//                voltage -= motorstep;
+ //           }
             trillian.dashboard.ShowAngleMotor(888);
         }
     }

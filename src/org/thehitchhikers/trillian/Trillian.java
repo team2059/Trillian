@@ -62,7 +62,7 @@ public class Trillian extends SimpleRobot {
                 }
             }
             
-            // driveTrain.Drive(left,right);
+            driveTrain.Drive(left,right);
             
              if (compressing && compressor.getPressureSwitchValue())
              {
@@ -72,7 +72,7 @@ public class Trillian extends SimpleRobot {
              else if (!compressor.getPressureSwitchValue() && !compressing)
              {
                 compressing = true;
-                //compressor.start();
+                compressor.start();
             }
             
             if (shooterStick.getTrigger())
