@@ -16,7 +16,7 @@ public class DriverStick {
     
     Joystick MyStick;
     Trillian trillian;
-    static double triggerSpeed = 0.25;
+    static double triggerSpeed = 0.33;
     static double fullForward = 1;
     static double fullBackward = -1;
     static double zero = 0;
