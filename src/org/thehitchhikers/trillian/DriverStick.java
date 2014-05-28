@@ -119,13 +119,6 @@ public class DriverStick {
     void process()
     {
         trillian.driveTrain.Drive(getDrivePair());
-        
-        double voltage, potVol;
-        voltage = MyStick.getThrottle();
-        trillian.shooter.angleWheel.set(voltage);
-        potVol = trillian.shooter.anglePot.getVoltage();
-        trillian.dashboard.ShowAngleMotor(voltage);
-        trillian.dashboard.ShowAngleVoltage(potVol);
 
     }
     
