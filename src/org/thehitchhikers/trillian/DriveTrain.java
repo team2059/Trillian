@@ -16,6 +16,7 @@ public class DriveTrain {
     double LastLeftPower;
     double LastRightPower;
     double MaxStep;
+    double responseThreshold;
     
     DriveTrain(Trillian thebot){
         trillian = thebot;
@@ -24,45 +25,52 @@ public class DriveTrain {
         Right1 = new Talon(2);
         Right2 = new Talon(4);
         MaxStep = 0.005;
+        responseThreshold = 0.05;
     }
     
-    void Drive(double left,double right){
+    void Drive(DrivePair pair){
        
-        
-       double diff; 
-       if(left < LastLeftPower){
-           diff = LastLeftPower - left;
-           if(diff > MaxStep){
-               left = LastLeftPower - MaxStep;
-               
-           }
-      
-       }
+        double left = pair.leftPower;
+        double right = pair.rightPower;
+        double diff = 0; 
        
-       
-       if(left > LastLeftPower){
-           diff = LastLeftPower + left;
-           if(diff < MaxStep){
-               left = LastLeftPower + MaxStep;
-           }
-                 
-       }
+        if (Math.abs(left) < responseThreshold)
+           left = 0;
+        else
+        {
+            if(left < LastLeftPower){
+                diff = LastLeftPower - left;
+                if(diff > MaxStep){
+                    left = LastLeftPower - MaxStep;        
+                }
+            }
 
-       if(right < LastRightPower){
-           diff = LastRightPower - right;
-           if(diff > MaxStep){
-               right = LastRightPower - MaxStep;
-           }
-       }
+            if(left > LastLeftPower){
+                diff = LastLeftPower + left;
+                if(diff < MaxStep){
+                    left = LastLeftPower + MaxStep;
+                }         
+            }
+        }
 
-       if(right > LastRightPower){
-           diff = LastRightPower + right;
-           if(diff < MaxStep){
-               right = LastRightPower + MaxStep;
-           }
-       }
-        
-       
+        if (Math.abs(right) < responseThreshold)
+           right = 0;
+        else
+        {
+            if(right < LastRightPower){
+                diff = LastRightPower - right;
+                if(diff > MaxStep){
+                    right = LastRightPower - MaxStep;
+                }
+            }
+
+            if(right > LastRightPower){
+                diff = LastRightPower + right;
+                if(diff < MaxStep){
+                    right = LastRightPower + MaxStep;
+                }
+            }
+        }
         
         LastLeftPower = left;
         LastRightPower = right;
@@ -71,5 +79,4 @@ public class DriveTrain {
         Right2.set(0-right);
         Left2.set(left);
     }
-    
 }

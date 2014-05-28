@@ -18,7 +18,22 @@ public class ShooterStick {
     
     public ShooterStick(Trillian thebot){
         trillian = thebot;
-        MyStick = new Joystick(1);
+        MyStick = new Joystick(2);
+    }
+    
+    void process()
+    {
+        if (getTrigger())
+        {
+            trillian.shooter.ResetFrisbee();
+        }
+        else
+        {
+            trillian.shooter.PushFrisbee();
+        }
+
+        //System.out.println("wheel speed:" + driverStick.getWheelSpeed());
+        trillian.shooter.SpinWheel(getWheelSpeed());
     }
     
     public boolean getTrigger()
@@ -28,7 +43,6 @@ public class ShooterStick {
     
     public double getWheelSpeed()
     {
-        
         return (MyStick.getRawAxis(4) - 1)/2;
     }
 

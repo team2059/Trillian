@@ -22,17 +22,17 @@ public class Dashboard {
     
     void ShowWheelSpeed(double speed)
     {
-        SmartDashboard.putDouble("WheelSpeed", speed);
+        SmartDashboard.putNumber("WheelSpeed", speed);
     }
     
     void ShowAngleVoltage(double voltage)
     {
-        SmartDashboard.putDouble("AngleVoltage", voltage);
+        SmartDashboard.putNumber("AngleVoltage", voltage);
     }
     
     void ShowAngleMotor(double voltage)
     {
-        SmartDashboard.putDouble("AngleMotor", voltage);
+        SmartDashboard.putNumber("AngleMotor", voltage);
     }
     
 }

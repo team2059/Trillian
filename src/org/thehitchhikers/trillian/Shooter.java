@@ -33,6 +33,8 @@ public class Shooter {
         angleWheel = new Talon(6);
         anglePot = new AnalogChannel(1);
         armed = false;
+        inSol.set(false);
+        outSol.set(true);
     }
     
     void PushFrisbee()
