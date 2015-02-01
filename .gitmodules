@@ -1,0 +1,3 @@
+[submodule "hhlib"]
+	path = hhlib
+	url = git@github.com:team2059/hhlib
