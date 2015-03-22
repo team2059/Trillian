@@ -17,7 +17,7 @@ Trillian led us to the finals at the North Carolina Regional in 2013 with a fast
 - Button 4 - Preset shooting angle for dashboard set angle
 - Button 5 - Preset shooting angle for loading disks
 - Button 6 - Preset shooting angle for shooter all the way up
-- Button 11 - Reversed shooter direction
+- Button 11 - Reverses shooter direction
 
 ### Documentation
 [GitHub Page](http://team2059.github.io/Trillian/)
