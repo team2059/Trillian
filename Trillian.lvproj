@@ -114,7 +114,6 @@ DirectoryIndex index.htm
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Team VIs" Type="Folder">
-				<Item Name="Toggle Switch.vi" Type="VI" URL="../Toggle Switch.vi"/>
 				<Item Name="Set Disk Piston.vi" Type="VI" URL="../Team VIs/Set Disk Piston.vi"/>
 				<Item Name="Set Shooter Wheel.vi" Type="VI" URL="../Team VIs/Set Shooter Wheel.vi"/>
 				<Item Name="Set Climb Piston.vi" Type="VI" URL="../Team VIs/Set Climb Piston.vi"/>
@@ -124,11 +123,9 @@ DirectoryIndex index.htm
 				<Item Name="Get Accelerometer Angle.vi" Type="VI" URL="../Team VIs/Get Accelerometer Angle.vi"/>
 				<Item Name="Get Gyro Angle.vi" Type="VI" URL="../Team VIs/Get Gyro Angle.vi"/>
 				<Item Name="Set Robot Drive.vi" Type="VI" URL="../Team VIs/Set Robot Drive.vi"/>
-				<Item Name="Convert Joystick Throttle.vi" Type="VI" URL="../Team VIs/Convert Joystick Throttle.vi"/>
 				<Item Name="Set Climb Piston 2.vi" Type="VI" URL="../Team VIs/Set Climb Piston 2.vi"/>
 				<Item Name="Set Angle Preset 2.vi" Type="VI" URL="../Team VIs/Set Angle Preset 2.vi"/>
 				<Item Name="Set Angle With Pot Auto.vi" Type="VI" URL="../Team VIs/Set Angle With Pot Auto.vi"/>
-				<Item Name="Half Speed Converter.vi" Type="VI" URL="../Team VIs/Half Speed Converter.vi"/>
 			</Item>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
@@ -597,7 +594,6 @@ DirectoryIndex index.htm
 				<Item Name="WPI_RobotDriveOpen4MotorWithVictor.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveOpen4MotorWithVictor.vi"/>
 				<Item Name="WPI_RobotDriveOpen4MotorWithJaguar.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveOpen4MotorWithJaguar.vi"/>
 				<Item Name="WPI_RobotDriveOpen4Motor.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveOpen4Motor.vi"/>
-				<Item Name="WPI_JoystickGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickGet.vi"/>
 				<Item Name="FRC2_Digital_FPGA_2012_1.6.4.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/FRC2_Digital_FPGA_2012_1.6.4.lvbitx"/>
 				<Item Name="WPI_CANJaguar_CheckConfig.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CANJaguar_CheckConfig.vi"/>
 				<Item Name="WPI_CANJaguar_StatusSelect.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/CAN/Jaguar/SubVIs/WPI_CANJaguar_StatusSelect.ctl"/>
@@ -650,6 +646,7 @@ DirectoryIndex index.htm
 				<Item Name="WPI_RobotDriveMecanumDrive_Cartesian.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveMecanumDrive_Cartesian.vi"/>
 				<Item Name="WPI_RobotDriveRotateVector.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveRotateVector.vi"/>
 				<Item Name="WPI_RobotDriveDelayAndUpdateSafety.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveDelayAndUpdateSafety.vi"/>
+				<Item Name="WPI_JoystickGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickGet.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -657,7 +654,6 @@ DirectoryIndex index.htm
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Get Joystick type.vi" Type="VI" URL="../Team VIs/Get Joystick type.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
