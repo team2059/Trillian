@@ -19,5 +19,30 @@ Trillian led us to the finals at the North Carolina Regional in 2013 with a fast
 - Button 6 - Preset shooting angle for shooter all the way up
 - Button 11 - Reverses shooter direction
 
+### Electronics
+##### PWMs
+- PWM 1 - Rear Left Drive Motor
+- PWM 2 - Rear Right Drive Motor
+- PWM 3 - Front Left Drive Motor
+- PWM 4 - Front Right Drive Motor
+- PWM 5 - Shooter Motor
+- PWM 6 - Shooter Angle Motor
+
+##### Solenoids
+- Solenoid 1 - Shooter Piston
+- Solenoid 2 - Shooter Piston
+- Solenoid 3 - Climber Piston
+- Solenoid 4 - Climber Piston
+
+##### Relay
+- Relay 4 - Compressor
+
+##### DIO
+- DIO 1 - Compressor
+- DIO 2 - Shooter Angle Limit
+
+##### AI
+- AI 1 - Shooter Angle Potentiometer
+
 ### Documentation
 [GitHub Page](http://team2059.github.io/Trillian/)
